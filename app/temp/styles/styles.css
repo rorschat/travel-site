@@ -738,6 +738,11 @@ a{
   margin-top: 0;
 }
 
+.row {
+	
+	/* begin equal height rules*/
+}
+
 .row::after {
   content: "";
   clear: both;
@@ -836,7 +841,7 @@ a{
   }
 }
 
-/* begin equal height rules*/
+/*.flexbox (for older browsers)*/
 
 @media (min-width: 800px) {
 
@@ -853,6 +858,8 @@ a{
   display: -ms-flexbox;
   display: flex;
 }
+
+/*.flexbox (broke new browsers)*/
 
 @media (min-width: 1010px) {
 
